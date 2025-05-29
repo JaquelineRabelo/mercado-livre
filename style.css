@@ -8,8 +8,8 @@
 
 /* BODY */
 body {
-  background: linear-gradient(135deg, #FFFAF0 0%, #FFF5E6 100%);
-  color: #333333;
+  background: linear-gradient(135deg, #121212 0%, #1E1E1E 100%);
+  color: #E0E0E0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,14 +18,14 @@ body {
 
 /* CABEÇALHO */
 header {
-  background-color: #FF6F61;
+  background-color: #5579C6; /* azul mais suave */
   color: white;
   padding: 20px 40px;
   text-align: center;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.2rem; /* menor ainda */
   border-radius: 12px;
-  box-shadow: 0 3px 8px rgba(255, 111, 97, 0.5);
+  box-shadow: 0 3px 8px rgba(85, 121, 198, 0.7);
   max-width: 900px;
   margin: 0 auto 30px auto;
   width: 100%;
@@ -33,28 +33,29 @@ header {
 
 /* RODAPÉ */
 footer {
-  background-color: #FFB347;
+  background-color: #FFE600; /* amarelo Mercado Livre */
   color: #333;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* levemente menor */
   text-align: center;
   padding: 15px 20px;
   border-radius: 12px;
   max-width: 900px;
   margin: 40px auto 0 auto;
-  box-shadow: 0 -2px 6px rgba(255, 179, 71, 0.3);
+  box-shadow: 0 -2px 6px rgba(255, 230, 0, 0.6);
   width: 100%;
 }
 
 /* MAIN */
 main {
-  background-color: white;
+  background-color: #222222;
   max-width: 900px;
   margin: 0 auto;
   padding: 30px 40px;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(255, 111, 97, 0.15);
+  box-shadow: 0 4px 20px rgba(85, 121, 198, 0.3);
   flex: 1;
+  color: #E0E0E0;
 }
 
 /* MENU DE NAVEGAÇÃO (index.html) */
@@ -67,31 +68,28 @@ nav {
 }
 
 nav a {
-  background-color: #FF6F61;
+  background-color: #5579C6; /* azul suave */
   color: white;
-  padding: 18px 36px;
+  padding: 16px 32px;
   text-decoration: none;
   border-radius: 12px;
   font-weight: 700;
-  font-size: 1.3rem;
-  box-shadow: 0 6px 15px rgba(255, 111, 97, 0.4);
+  font-size: 1.1rem; /* menor */
+  box-shadow: 0 6px 15px rgba(85, 121, 198, 0.5);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #FF3D00;
-  box-shadow: 0 10px 25px rgba(255, 61, 0, 0.6);
+  background-color: #3E579B; /* azul hover mais suave */
+  box-shadow: 0 10px 25px rgba(62, 87, 155, 0.7);
 }
 
 /* TÍTULOS */
- h2 {
-  color: #FF6F61;
+h2 {
+  color: #5579C6;
   margin-bottom: 25px;
   font-weight: 700;
-}
-
-h2 {
-  font-size: 1.8rem;
+  font-size: 1.4rem; /* menor */
 }
 
 /* FORMULÁRIOS */
@@ -100,7 +98,6 @@ form {
   flex-direction: column;
   gap: 20px;
 }
-
 
 /* INPUTS, TEXTAREAS */
 input[type="text"],
@@ -111,10 +108,10 @@ input[type="url"],
 textarea {
   padding: 14px 18px;
   border-radius: 10px;
-  border: 1.8px solid #FFDAB9;
-  background-color: #FFF5E6;
+  border: 1.8px solid #444444;
+  background-color: #333333;
   font-size: 1rem;
-  color: #333;
+  color: #E0E0E0;
   transition: border-color 0.3s ease, background-color 0.3s ease;
   resize: vertical;
   width: 100%;
@@ -128,32 +125,32 @@ input[type="number"]:focus,
 input[type="url"]:focus,
 textarea:focus {
   outline: none;
-  border-color: #FF6F61;
-  background-color: #FFF0E8;
+  border-color: #5579C6;
+  background-color: #3E579B33; /* azul claro translúcido */
 }
 
 /* BOTÕES */
 input[type="submit"],
 button {
-  background-color: #FF6F61;
+  background-color: #5579C6;
   color: white;
-  padding: 15px 0;
+  padding: 14px 0;
   border: none;
   border-radius: 14px;
-  font-size: 1.15rem;
+  font-size: 1rem; /* menor */
   font-weight: 500;
   cursor: pointer;
-  box-shadow: 0 6px 15px rgba(255, 111, 97, 0.4);
+  box-shadow: 0 6px 12px rgba(85, 121, 198, 0.5);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  max-width: 200px;
+  max-width: 180px;
   align-self: center;
 }
 
 input[type="submit"]:hover,
 button:hover {
-  background-color: #FF3D00;
-  box-shadow: 0 10px 25px rgba(255, 61, 0, 0.6);
+  background-color: #3E579B;
+  box-shadow: 0 10px 20px rgba(62, 87, 155, 0.7);
 }
 
 /* PRODUTO: IMAGEM */
@@ -163,30 +160,30 @@ button:hover {
   object-fit: contain;
   border-radius: 12px;
   margin-bottom: 15px;
-  border: 1.5px solid #FFDAB9;
+  border: 1.5px solid #444444;
+  background-color: #222222;
 }
 
 /* Estilo para botões de submit menores nas páginas de cadastro */
 input[type="submit"] {
-  background-color: #FF6F61;
+  background-color: #5579C6;
   color: white;
   border: none;
-  padding: 8px 16px;  /* menor que antes */
-  font-size: 0.9rem;  /* menor tamanho de fonte */
+  padding: 7px 14px;
+  font-size: 0.85rem;  /* menor ainda */
   border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
-  box-shadow: 0 2px 6px rgba(255, 111, 97, 0.6);
+  box-shadow: 0 2px 6px rgba(85, 121, 198, 0.5);
   transition: background-color 0.3s ease;
   user-select: none;
-  width: auto; /* deixa o botão do tamanho do texto */
+  width: auto;
   display: inline-block;
 }
 
 input[type="submit"]:hover {
-  background-color: #FF3D00;
+  background-color: #3E579B;
 }
-
 
 /* RESPONSIVIDADE */
 @media (max-width: 900px) {
@@ -202,19 +199,19 @@ input[type="submit"]:hover {
   }
 
   nav a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 14px 28px;
   }
 }
 
 @media (max-width: 480px) {
   input[type="submit"], button {
-    font-size: 1rem;
-    padding: 12px 0;
+    font-size: 0.9rem;
+    padding: 10px 0;
   }
 
   nav a {
-    font-size: 1rem;
-    padding: 12px 20px;
+    font-size: 0.9rem;
+    padding: 10px 16px;
   }
 }

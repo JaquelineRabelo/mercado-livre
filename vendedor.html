@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema Mercado Livre</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Mercado Livre  </h1>
+</header>
+
+<a href="index.html" class="btn-voltar">◀ Voltar</a>
+
+
+  <main> <!--inicio main -->
+  
+    <!-- Cadastro de Vendedor -->
+    <section class="form-section" id="vendedor">
+
+      <h2>Cadastro de Vendedor</h2>
+
+     <form action="vendedor.php" method="post">
+  <p>Nome: <input type="text" name="nome-vendedor" required></p>
+  <p>CPF: <input type="text" name="cpf-vendedor" required></p>
+  <p>Endereço: <input type="text" name="endereco-vendedor" required></p>
+  <p>Telefone: <input type="text" name="telefone-vendedor" required></p>
+  <p>Email: <input type="email" name="email-vendedor" required></p>
+  <p>Senha: <input type="password" name="senha-vendedor" required></p>
+  <p>Banco: <input type="text" name="banco" required></p>
+  <p>Agência: <input type="text" name="agencia" required></p>
+  <p>Conta: <input type="text" name="conta" required></p>
+  <p><input type="submit" value="Cadastrar Vendedor"></p>
+</form>
+
+    </section>
+
+   
+  </main> <!--Fim main -->
+
+  <footer>
+      <p>&copy;  Mercado Livre - 2025</p>
+  </footer>
+
+</body>
+</html>

@@ -3,46 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sistema Mercado Livre</title>
+  <title>Cadastro de Produto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
   <header>
-    <h1>Mercado Livre </h1>
-</header>
+    <h1>Mercado Livre</h1>
+  </header>
 
   <a href="index.html" class="btn-voltar">◀ Voltar</a>
 
-  <main> <!--inicio main -->
-
-    <!-- Cadastro de Produto -->
+  <main> <!-- início main -->
 
     <section class="form-section" id="produto">
       <h2>Cadastro de Produto</h2>
 
       <form action="produto.php" method="post">
-  <p>Foto do Produto (URL): <input type="url" name="foto-produto"></p>
-  <p>Nome: <input type="text" name="nome-produto" required></p>
-  <p>Descrição: <textarea name="descricao-produto" rows="4" required></textarea></p>
-  <p>Preço: <input type="number" step="0.01" name="preco-produto" required></p>
-  <p>Prazo de Entrega (dias): <input type="number" name="prazo-entrega" required></p>
-  <p>
-    <input type="submit" name="acao" value="Cadastrar Produto">
-    <input type="submit" name="acao" value="Alterar Produto">
-    <input type="submit" name="acao" value="Excluir Produto">
-  </p>
-</form>
+        <p>Foto do Produto (URL): <input type="url" name="foto-produto"></p>
+        <p>Nome: <input type="text" name="nome-produto" required></p>
+        <p>Descrição: <textarea name="descricao-produto" rows="4" required></textarea></p>
+        <p>Preço: <input type="number" step="0.01" name="preco-produto" required></p>
+        <p>Prazo de Entrega (dias): <input type="number" name="prazo-entrega" required></p>
 
+        <!-- ✅ Checkbox de disponibilidade -->
+        <p>
+          <label>
+            <input type="checkbox" id="disponibilidade-produto" />
+            Produto disponível para venda
+          </label>
+        </p>
+
+        <p>
+          <input type="submit" name="acao" value="Cadastrar Produto">
+          <input type="submit" name="acao" value="Alterar Produto">
+          <input type="submit" name="acao" value="Excluir Produto">
+        </p>
+      </form>
     </section>
 
-
-  </main><!-- Fim main -->
+  </main><!-- fim main -->
 
   <footer>
-      <p>&copy;  Mercado Livre - 2025</p>
+    <p>&copy; Mercado Livre - 2025</p>
   </footer>
 
+
+  <script src="script.js"></script>
 </body>
 </html>
